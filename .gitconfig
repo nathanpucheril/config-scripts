@@ -1,0 +1,13 @@
+[pull]
+	rebase = true
+[alias]
+	prom = pull --rebase origin master
+  co = checkout
+  cob = checkout -b
+	com = checkout master
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+  cm = !git add -A && git commit -m
+  save = !git add -A && git commit -m "SAVEPOINT"
+  undo = reset HEAD~1 --mixed
+  amend = commit -a --amend
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
