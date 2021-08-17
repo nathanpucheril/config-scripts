@@ -27,6 +27,9 @@ case "$OSTYPE" in
   alias ls='ls -F'
 esac
 
+alias pushcurrbranch='git branch --show-current | xargs git push origin '
+
+
 
 # Show/Hide Hidden Files in Finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES;
