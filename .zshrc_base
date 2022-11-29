@@ -1,0 +1,6 @@
+source ~/.zshrc_3nets
+
+eval "$(op completion zsh)"; compdef _op op
+
+# zsh users - add the following line to your ~/.zshrc
+eval "$(direnv hook zsh)"
